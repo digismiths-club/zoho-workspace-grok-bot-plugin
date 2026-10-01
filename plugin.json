@@ -1,0 +1,37 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "zoho-workspace",
+  "version": "0.1.0",
+  "description": "Connect Grok Bot and Cursor to Zoho Workspace. Use your Zoho MCP server for Mail, Calendar, WorkDrive, and Cliq.",
+  "author": {
+    "name": "CurryByte Innovations"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/digismiths-club/zoho-workspace-grok-bot-plugin",
+  "repository": "https://github.com/digismiths-club/zoho-workspace-grok-bot-plugin",
+  "keywords": [
+    "zoho",
+    "workspace",
+    "mail",
+    "calendar",
+    "workdrive",
+    "cliq",
+    "mcp",
+    "grok-bot"
+  ],
+  "extensions": {
+    "com.cursor": {
+      "variables": {
+        "type": "object",
+        "required": ["ZOHO_MCP_URL"],
+        "properties": {
+          "ZOHO_MCP_URL": {
+            "type": "string",
+            "title": "Zoho MCP Connect URL",
+            "description": "Create a server at mcp.zoho.com or your regional data center, add Mail, Calendar, WorkDrive, and Cliq tools, then copy the Connect URL."
+          }
+        }
+      }
+    }
+  }
+}

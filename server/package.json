@@ -1,0 +1,36 @@
+{
+  "name": "zoho-workspace-mcp",
+  "version": "0.1.0",
+  "description": "Self-hosted MCP server for Zoho Workspace (Mail, Calendar, WorkDrive, and Cliq).",
+  "type": "module",
+  "license": "MIT",
+  "author": "CurryByte Innovations",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digismiths-club/zoho-workspace-grok-bot-plugin.git",
+    "directory": "server"
+  },
+  "bin": {
+    "zoho-workspace-mcp": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.2.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.0",
+    "typescript": "^5.8.3"
+  }
+}
